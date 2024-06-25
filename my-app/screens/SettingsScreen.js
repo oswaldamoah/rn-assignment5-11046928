@@ -4,60 +4,64 @@ import styled from 'styled-components/native';
 
 const SettingsScreen = ({ toggleTheme, isDarkTheme }) => {
   return (
-    <View>
-      <HeaderText><Text>Settings</Text></HeaderText> {/* Wrap text in Text component */}
+    <MainContainer>
+      <HeaderText>Settings</HeaderText>
       <Container>
         <SettingItem>
-          <SettingText><Text>Change Password</Text></SettingText> {/* Wrap text in Text component */}
+          <SettingText>Change Password</SettingText>
         </SettingItem>
         <SettingItem>
-          <SettingText><Text>Privacy Policy</Text></SettingText> {/* Wrap text in Text component */}
+          <SettingText>Privacy Policy</SettingText>
         </SettingItem>
         <SettingItem>
-          <SettingText><Text>Language</Text></SettingText> {/* Wrap text in Text component */}
+          <SettingText>Language</SettingText>
         </SettingItem>
         <SettingItem>
-          <SettingText><Text>Contact Us</Text></SettingText> {/* Wrap text in Text component */}
-       
-
-</SettingItem>
-<SettingItem>
-  <SettingText><Text>My Profile</Text></SettingText> {/* Wrap text in Text component */}
-</SettingItem>
-<SettingItem>
-  <SettingText><Text>Theme</Text></SettingText> {/* Wrap text in Text component */}
-  <Switch value={isDarkTheme} onValueChange={toggleTheme} />
-</SettingItem>
-</Container>
-</View>
-);
+          <SettingText>Contact Us</SettingText>
+        </SettingItem>
+        <SettingItem>
+          <SettingText>My Profile</SettingText>
+        </SettingItem>
+        <SettingItem>
+          <SettingText>Theme</SettingText>
+          <Switch value={isDarkTheme} onValueChange={toggleTheme} />
+        </SettingItem>
+      </Container>
+    </MainContainer>
+  );
 };
 
+const MainContainer = styled.View`
+  flex: 1;
+  background-color: ${(props) => props.theme.background};
+`;
+
 const HeaderText = styled.Text`
-font-size: 24px;
-font-weight: bold;
-text-align: center;
-margin-top: 20px; /* Adjust margin-top as needed */
+  font-size: 24px;
+  font-weight: bold;
+  color: ${(props) => props.theme.text};
+  text-align: center;
+  margin-top: 20px;
 `;
 
 const Container = styled.View`
-padding: 20px;
-background-color: ${(props) => props.theme.background};
-height: 100%;
+  padding: 20px;
+  background-color: ${(props) => props.theme.background};
+  flex: 1;
 `;
 
 const SettingItem = styled.View`
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 15px 0;
-border-bottom-width: 1px;
-border-bottom-color: ${(props) => props.theme.card};
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom-width: 1px;
+  border-bottom-color: ${(props) => props.theme.card};
 `;
 
 const SettingText = styled.Text`
-font-size: 18px;
-color: ${(props) => props.theme.text};
+  font-size: 18px;
+  color: ${(props) => props.theme.text};
 `;
 
 export default SettingsScreen;
