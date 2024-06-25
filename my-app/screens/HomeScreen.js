@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { ScrollView, TouchableOpacity, Text } from 'react-native'; // Import Text from react-native
-import styled, { ThemeContext } from 'styled-components/native'; // Import ThemeContext
+import { ScrollView, TouchableOpacity, Text } from 'react-native';
+import styled, { ThemeContext } from 'styled-components/native';
 import { Ionicons } from '@expo/vector-icons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
@@ -19,11 +19,10 @@ const HomeScreen = () => {
         <ProfileSection>
           <ProfileImage source={Profile} />
           <WelcomeText>
-            <Text><b>Welcome back,</b></Text> {/* Wrap text in Text component */}
-            <Text>Eric Atsu</Text> {/* Wrap text in Text component */}
+            <Text><b>Welcome back,</b></Text>
+            <Text>Eric Atsu</Text>
           </WelcomeText>
           <TouchableOpacity>
-            {/* Use theme.iconColor to set the color dynamically */}
             <Ionicons name="search-outline" size={24} color={theme.iconColor} />
           </TouchableOpacity>
         </ProfileSection>
@@ -35,22 +34,22 @@ const HomeScreen = () => {
         <ButtonRow>
           <ActionButton>
             <Ionicons name="arrow-up" size={24} color={theme.iconColor} />
-            <ButtonText><Text>Send</Text></ButtonText> {/* Wrap text in Text component */}
+            <ButtonText><Text>Send</Text></ButtonText>
           </ActionButton>
 
           <ActionButton>
             <Ionicons name="arrow-down" size={24} color={theme.iconColor} />
-            <ButtonText><Text>Receive</Text></ButtonText> {/* Wrap text in Text component */}
+            <ButtonText><Text>Receive</Text></ButtonText> 
           </ActionButton>
             
           <ActionButton>
             <FontAwesome6 name="dollar" size={24} color={theme.iconColor} />
-            <ButtonText><Text>Loan</Text></ButtonText> {/* Wrap text in Text component */}
+            <ButtonText><Text>Loan</Text></ButtonText> 
           </ActionButton>
 
           <ActionButton>
             <FontAwesome6 name="add" size={24} color={theme.iconColor} />
-            <ButtonText><Text>Topup</Text></ButtonText> {/* Wrap text in Text component */}
+            <ButtonText><Text>Topup</Text></ButtonText> 
           </ActionButton>
 
         </ButtonRow>
@@ -60,12 +59,12 @@ const HomeScreen = () => {
             <TransactionItem>
               <TransactionIcon source={Apple} />
               <TransactionInfo>
-                <TransactionTitle><Text>Apple Store</Text></TransactionTitle> {/* Wrap text in Text component */}
-                <TransactionCategory><Text>Entertainment</Text></TransactionCategory> {/* Wrap text in Text component */}
+                <TransactionTitle><Text>Apple Store</Text></TransactionTitle>
+                <TransactionCategory><Text>Entertainment</Text></TransactionCategory>
               </TransactionInfo>
               <TransactionDetails>
-                <TransactionAmount positive><Text>+$300</Text></TransactionAmount> {/* Wrap text in Text component */}
-                <TransactionDate><Text>12/06/2024</Text></TransactionDate> {/* Wrap text in Text component */}
+                <TransactionAmount positive><Text>+$300</Text></TransactionAmount>
+                <TransactionDate><Text>12/06/2024</Text></TransactionDate>
               </TransactionDetails>
             </TransactionItem>
           </TouchableOpacity>
@@ -73,12 +72,12 @@ const HomeScreen = () => {
             <TransactionItem>
               <TransactionIcon source={Spotify} />
               <TransactionInfo>
-                <TransactionTitle><Text>Spotify</Text></TransactionTitle> {/* Wrap text in Text component */}
-                <TransactionCategory><Text>Music</Text></TransactionCategory> {/* Wrap text in Text component */}
+                <TransactionTitle><Text>Spotify</Text></TransactionTitle>
+                <TransactionCategory><Text>Music</Text></TransactionCategory>
               </TransactionInfo>
               <TransactionDetails>
-                <TransactionAmount negative><Text>-$88</Text></TransactionAmount> {/* Wrap text in Text component */}
-                <TransactionDate><Text>13/06/2024</Text></TransactionDate> {/* Wrap text in Text component */}
+                <TransactionAmount negative><Text>-$88</Text></TransactionAmount>
+                <TransactionDate><Text>13/06/2024</Text></TransactionDate>
               </TransactionDetails>
             </TransactionItem>
           </TouchableOpacity>
@@ -86,12 +85,12 @@ const HomeScreen = () => {
             <TransactionItem>
               <TransactionIcon source={moneyTransfer} />
               <TransactionInfo>
-                <TransactionTitle><Text>Money Transfer</Text></TransactionTitle> {/* Wrap text in Text component */}
-                <TransactionCategory><Text>Transaction</Text></TransactionCategory> {/* Wrap text in Text component */}
+                <TransactionTitle><Text>Money Transfer</Text></TransactionTitle>
+                <TransactionCategory><Text>Transaction</Text></TransactionCategory>
               </TransactionInfo>
               <TransactionDetails>
-                <TransactionAmount negative><Text>-$5.99</Text></TransactionAmount> {/* Wrap text in Text component */}
-                <TransactionDate><Text>14/06/2024</Text></TransactionDate> {/* Wrap text in Text component */}
+                <TransactionAmount negative><Text>-$5.99</Text></TransactionAmount>
+                <TransactionDate><Text>14/06/2024</Text></TransactionDate>
               </TransactionDetails>
             </TransactionItem>
           </TouchableOpacity>
@@ -99,16 +98,15 @@ const HomeScreen = () => {
             <TransactionItem>
               <TransactionIcon source={Grocery} />
               <TransactionInfo>
-                <TransactionTitle><Text>Groceries</Text></TransactionTitle> {/* Wrap text in Text component */}
-                <TransactionCategory><Text>Shopping</Text></TransactionCategory> {/* Wrap text in Text component */}
+                <TransactionTitle><Text>Groceries</Text></TransactionTitle>
+                <TransactionCategory><Text>Shopping</Text></TransactionCategory>
               </TransactionInfo>
               <TransactionDetails>
-                <TransactionAmount negative><Text>-$12.99</Text></TransactionAmount> {/* Wrap text in Text component */}
-                <TransactionDate><Text>15/06/2024</Text></TransactionDate> {/* Wrap text in Text component */}
+                <TransactionAmount negative><Text>-$12.99</Text></TransactionAmount>
+                <TransactionDate><Text>15/06/2024</Text></TransactionDate>
               </TransactionDetails>
             </TransactionItem>
           </TouchableOpacity>
-          {/* Add more transactions as needed */}
         </Transactions>
       </Container>
     </ScrollView>
@@ -116,7 +114,6 @@ const HomeScreen = () => {
 };
 
 // Styled Components remain the same as in your original code
-
 const Container = styled.View({
   padding: 20,
   backgroundColor: props => props.theme.background,
