@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons'; // For adding icons in tabs
+import { Ionicons } from '@expo/vector-icons'; 
 import HomeScreen from './screens/HomeScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import MyCardsScreen from './screens/MyCardsScreen';
@@ -65,7 +65,7 @@ function App() {
               backgroundColor: isDarkTheme ? '#28243c' : '#ffffff',
               borderTopColor: isDarkTheme ? '#333333' : '#f0f0f0',
             },
-            headerShown: false, // Remove the top bar
+            headerShown: false, // Hide the top bar
           })}
         >
           <Tab.Screen name="Home" component={HomeScreen} />
