@@ -20,7 +20,7 @@ const HomeScreen = () => {
           <ProfileImage source={Profile} />
           <WelcomeText>
             <Text><b>Welcome back,</b></Text>
-            <Text>Eric Atsu</Text>
+            <Text><br></br>Eric Atsu</Text>
           </WelcomeText>
           <TouchableOpacity>
             <Ionicons name="search-outline" size={24} color={theme.iconColor} />
