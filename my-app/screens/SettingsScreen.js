@@ -37,7 +37,7 @@ const MainContainer = styled.View`
 `;
 
 const HeaderText = styled.Text`
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   color: ${(props) => props.theme.text};
   text-align: center;
@@ -60,7 +60,7 @@ const SettingItem = styled.View`
 `;
 
 const SettingText = styled.Text`
-  font-size: 18px;
+  font-size: 22px;
   color: ${(props) => props.theme.text};
 `;
 
