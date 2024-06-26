@@ -51,7 +51,7 @@ function App() {
               } else if (route.name === 'MyCards') {
                 iconName = 'card-outline';
               } else if (route.name === 'Statistics') {
-                iconName = 'stats-chart-outline';
+                iconName = 'pie-chart';
               }
               
               // Determine icon color based on theme
