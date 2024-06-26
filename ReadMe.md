@@ -33,13 +33,13 @@ The StatisticsScreen component is another placeholder for future development.
 The following screenshots provide a visual representation of the application in both light and dark themes:
 
 ### Screenshots: Light Mode 
-<img src="./assets/screenshots/ss_bright1.png" height="500">
+<img src="my-app\assets\screenshots\ss_bright1.png" height="500">
 
-<img src="./assets/screenshots/ss_bright2.png" height="500">
+<img src="my-app\assets\screenshots\ss_bright2.png" height="500">
 
 
 ### Screenshots: Dark Mode
-<img src="./assets/screenshots/ss_dark1.png" height="500">
+<img src="my-app\assets\screenshots\ss_dark1.png" height="500">
 
-<img src="./assets/screenshots/ss_dark2.png" height="500">
+<img src="my-app\assets\screenshots\ss_dark2.png" height="500">
 
