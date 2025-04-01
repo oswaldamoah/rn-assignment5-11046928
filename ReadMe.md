@@ -1,5 +1,4 @@
-# DCIT202 ASSIGNMENT 5 
-### 11046928
+# Financial Management Mobile App
 ## Description
 This mobile application is a financial management tool designed to help users manage their finances effectively. The application includes functionalities such as sending and receiving money, taking loans, and topping up balances. It also provides a detailed list of recent transactions. Users can switch between light and dark themes based on their preference.
 
